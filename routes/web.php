@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,5 +17,15 @@ use App\Http\Controllers\CourseController;
 |
 */
 
+Route::group([
+    'prefix' => 'auth'
+], function ($router) {
+    Route::post('/login', [LoginController::class, 'authenticate']);
+    Route::get('/me', [LoginController::class, 'me']);
+
+    Route::post('/logout', [LogoutController::class, 'logout']);
+});
+
 Route::get('/courses', [CourseController::class, 'index']);
 Route::get('/courses/{course}', [CourseController::class, 'getCourseById']);
+
