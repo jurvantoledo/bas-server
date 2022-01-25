@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,15 +19,17 @@ use App\Http\Controllers\Auth\LoginController;
 |
 */
 
-Route::group([
-    'prefix' => 'auth'
-], function ($router) {
-    Route::post('/login', [LoginController::class, 'authenticate']);
-    Route::get('/me', [LoginController::class, 'me']);
+// Route::group([
+//     'prefix' => 'auth'
+// ], function ($router) {
+//     Route::post('/login', [LoginController::class, 'authenticate']);
+//     Route::get('/me', [LoginController::class, 'me']);
 
-    Route::post('/logout', [LogoutController::class, 'logout']);
-});
+//     Route::post('/logout', [LogoutController::class, 'logout']);
 
-Route::get('/courses', [CourseController::class, 'index']);
-Route::get('/courses/{course}', [CourseController::class, 'getCourseById']);
+//     Route::post('/register', [RegisterController::class, 'register']);
+// });
+
+// Route::get('/courses', [CourseController::class, 'index']);
+// Route::get('/courses/{course}', [CourseController::class, 'getCourseById']);
 
