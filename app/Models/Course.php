@@ -17,7 +17,7 @@ class Course extends Model
 
     public function users()
     {
-        return $this->hasMany(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function professor()

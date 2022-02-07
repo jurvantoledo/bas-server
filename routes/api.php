@@ -32,5 +32,5 @@ Route::post('/logout', [LogoutController::class, 'logout']);
 
 Route::post('/register', [RegisterController::class, 'register']);
 
-Route::get('/courses', [CourseController::class, 'index']);
-Route::get('/courses/{course}', [CourseController::class, 'getCourseById']);
+Route::get('/users', [UserController::class, 'index']);
+Route::get('/users/{user}', [UserController::class, 'getUserById']);
