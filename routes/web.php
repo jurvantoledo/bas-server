@@ -19,20 +19,6 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
-// Route::group([
-//     'prefix' => 'auth'
-// ], function ($router) {
-//     Route::post('/login', [LoginController::class, 'authenticate']);
-//     Route::get('/me', [LoginController::class, 'me']);
-
-//     Route::post('/logout', [LogoutController::class, 'logout']);
-
-//     Route::post('/register', [RegisterController::class, 'register']);
-// });
-
-// Route::get('/courses', [CourseController::class, 'index']);
-// Route::get('/courses/{course}', [CourseController::class, 'getCourseById']);
-
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/{path?}', function () {
+    return view('app');
 });
