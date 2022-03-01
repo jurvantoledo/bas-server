@@ -2,7 +2,7 @@
 <p>this application is used for testing purposes</p>
 
 ## Installation
-Clone the app<br />
+Clone the app with `git  clone <name-of-repository>`<br />
 After cloning the app:
 - run `composer update` in the terminal and everything should be working
 
