@@ -1,5 +1,5 @@
 ## Bas Server
-<p>this application is used for testing purposes</p>
+<p>This application is used for testing purposes</p>
 
 ## Installation
 Clone the app with `git  clone git@github.com:jurvantoledo/bas-server.git`<br />
