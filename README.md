@@ -15,7 +15,7 @@ After cloning the app:
 
 
 ## Commands
-Run:
+Run:<br />
 `rm -rf .git`<br />
 `php artisan serve`<br />
 `npm run watch`<br />
