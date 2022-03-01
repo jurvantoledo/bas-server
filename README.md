@@ -2,9 +2,10 @@
 <p>this application is used for testing purposes</p>
 
 ## Installation
-Clone the app with `git  clone <name-of-repository>`<br />
+Clone the app with `git  clone git@github.com:jurvantoledo/bas-server.git`<br />
 After cloning the app:
-- run `composer update` in the terminal and everything should be working
+- go in the folder
+- run `composer install` and everything should be working
 
 <b>If Composer is not installed already</b>
 <ul>
@@ -16,6 +17,6 @@ After cloning the app:
 
 ## Commands
 Run:<br />
-`rm -rf .git`<br />
+`rm -rf ./bas-server/.git`<br />
 `php artisan serve`<br />
 `npm run watch`<br />
