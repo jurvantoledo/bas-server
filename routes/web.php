@@ -33,3 +33,6 @@ use App\Http\Controllers\Auth\RegisterController;
 // Route::get('/courses', [CourseController::class, 'index']);
 // Route::get('/courses/{course}', [CourseController::class, 'getCourseById']);
 
+Route::get('/', function () {
+    return view('welcome');
+});
