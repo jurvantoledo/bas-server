@@ -18,5 +18,6 @@ After cloning the app:
 ## Commands
 Run:<br />
 `rm -rf ./bas-server/.git`<br />
+Go in folder and run: <br />
 `php artisan serve`<br />
 `npm run watch`<br />
